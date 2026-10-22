@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template area</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-areas: 
+            'header header header'
+            'content content content'
+            'box-1 box-2 box-3'
+            'footer footer footer';
+            grid-gap:1rem;
+        }
+
+        .header{
+            grid-area:header;
+
+        }
+        .content{
+            grid-area:content;
+
+        }
+        .sidebar{
+            grid-area:sidebar;
+
+        }
+        .box-1{grid-area:box-1;}
+        .box-2{grid-area:box-2;}
+        .box-3{grid-area:box-2;}
+
+        .footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .header,.content,.sidebar,.box-1,.box-2,.box-3{
+            border:1px solid;
+            padding:0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1> my website</h1>
+        </header>
+        <section calss="content">
+            <h3> welcome to my website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consectetur libero non. Temporibus aut aliquam officia nulla aperiam eaque illum nam? Necessitatibus laudantium ab numquam repellat quae qui nesciunt tenetur.</p>
+        
+        </section>
+        <aside class="sidebar">
+            <h3>contact us</h3>
+            <ul>
+                <li>learn</li>
+                <li>practise</li>
+                <li>sucess</li>
+                <li>sharatraj027@gmail.com</li>
+                <li>98776899876</li>
+            </ul>
+
+        </aside>
+        <div class="box-1">
+            <h3>heading-01 </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit doloribus esse rerum harum voluptas exercitationem illo amet assumenda, provident magnam molestiae consequatur minima fugiat eum blanditiis hic magni laboriosam?
+
+            </p>
+
+
+        </div> 
+
+        <div class="box-">
+            <h3>heading-02 </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit doloribus esse rerum harum voluptas exercitationem illo amet assumenda, provident magnam molestiae consequatur minima fugiat eum blanditiis hic magni laboriosam?
+
+            </p>
+
+
+        </div> 
+    </div>
+    <fotter class="fotter">
+        <p>copyright_@_2026</p>
+
+    </fotter>
+</body>
+</html>

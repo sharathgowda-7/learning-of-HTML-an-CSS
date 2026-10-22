@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_positions</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            position: relative;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        #box-1 {
+            position: static;
+            background-color: blue;
+            /* Default position */
+        } 
+
+        #box-2 {
+            position: relative;
+            bottom: 10px;
+            left: 30px;
+            background-color: green;
+            /* Moves the box down and to the right */
+        }
+
+        #box-3 {
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            background-color: yellow;
+            /* Moves the box down and to the right */
+        }
+
+        #box-4 {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: purple;
+            /* Stays in the same position even when scrolling */
+        }
+
+        #box-5 {
+            position: sticky;
+            bottom: 10px;
+            background-color: orange;
+            /* Sticks to the bottom of the viewport when scrolling */
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+</body>
+</html>
